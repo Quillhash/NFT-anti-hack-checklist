@@ -26,7 +26,7 @@ In this repository, we have created a checklist for developers as well as for us
 | 12 | **Bug bounty program** | Projects can host their bug bounty program or integrate with Bug Bounty Platforms like Immunefi or Hackerone. It adds an extra layer of security for the projects. |
 | 13 | **Safeguard wallet of Admin/Owner** | The Admin role is used to manage upgrades and various privileges role in logic. If the private key of the admin/owner of an NFT contract is leaked, the entire NFT project may be destroyed. So, Properly secure your wallet and always use a hardware wallet or a multisig wallet which is considered more secure. Check out this [blog](https://blog.trailofbits.com/2018/11/27/10-rules-for-the-secure-use-of-cryptocurrency-hardware-wallets/) for more details on wallet security. |
 | 14 | **Enable Authentication Methods/ 2FA to prevent Social account hacks.** | There are lots of scenarios where these NFT projects' social media accounts like Discord and Twitter are hacked, and the hackers use the compromised accounts for their gain. Check out this [blog](https://medium.com/quillhash/analysing-nfts-discord-server-hacks-quillaudits-46f8d874f913) for more details on NFT social media hacks and their prevention methods.
-
+| 15 | **Add checks for Weak Random Number Generation** | The weak PRNG issue is way too common in the NFT gaming ecosystem. It is recommended to use Chainlink VRF for generating a PRNG. Never use predefined methods related to the block like block.timestamp, block.number, or a controlled user input for generating random numbers. 
 
 ---
 
